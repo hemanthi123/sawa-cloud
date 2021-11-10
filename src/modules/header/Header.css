@@ -1,0 +1,24 @@
+
+.menuu1{
+   
+  
+  
+}
+
+.div-logout1{
+  background-color: white;
+  width: 100%;
+  padding-left: 60%; 
+  height: 9%;
+}
+
+
+.btn-menu1{ 
+  border-width: 2px;
+    border-color: rgb(222, 231, 228);
+    border-radius: 12px;
+    background-color: #67923d;
+    color: white;
+    width: 30%;
+    font-size: 14px;  
+}

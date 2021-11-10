@@ -1,0 +1,99 @@
+
+  
+.first_col_parent{
+  width: 25%;
+  float: left;
+  background-color: rgb(237, 241, 240);
+  padding-left: 4%; 
+  padding-top: 5.5%;
+} 
+
+
+.div-categories1{ 
+  position: fixed;
+    height:100%;
+    background-color:white; 
+    box-shadow: 0 4px 12px rgb(0 0 0 / 15%);  
+    border-radius: 12px; 
+}
+
+.div-categories-img1{  
+  position: absolute; 
+    height:10%;
+    width: 100%;
+    background-color:white; 
+    padding-left: 25%;
+    padding-top: 5%;
+}
+
+
+
+.post-pro-pic-user {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+.prof-desc1{
+  padding-top: 50%;
+  padding-left: 10%;
+  padding-right: 4%;
+}
+
+p{
+  font-size:14px;
+}
+
+.admin_panel{
+  display: none;
+}
+.admin_panel1{
+  display: block;
+}
+
+.user_panel p{  
+  align-content: left;
+  background-color:#67923d;  
+  box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+  border-radius: 12px;
+  width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.user_panel a{ 
+  color: white;  
+}
+
+.admin_panel1 a{ 
+  color: white;  
+}
+
+.admin_panel p{  
+  background-color:rgb(211, 146, 146);  
+  border-radius: 12px;
+  width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.admin_panel1 p{  
+  background-color:rgb(211, 146, 146);  
+  border-radius: 12px;
+  width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.admin_panel a{ 
+  color: white;
+  
+}
