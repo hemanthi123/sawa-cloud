@@ -17,7 +17,7 @@ import './YourRecentAdvertisements.css';
 import Header from "../header/Header";
 
 import Profile from "../profile/Profile";
-import PostPopup from "../post_popup/PostPopup"; 
+import AdvertisePopup from "../advertise_popup/AdvertisePopup"; 
 
 /****************************************** */
 
@@ -363,7 +363,7 @@ const deleteFn = (e) => {
              )  }) }
         <p><ReadMore>{entity.description}</ReadMore></p>
       </div> 
-      <div className="div-appr-button"><PostPopup value={entity}></PostPopup>  <button id={entity.post_path} onClick={(evt) => deleteFn(evt)} className="btnDelete">Delete</button> </div> 
+      <div className="div-appr-button"><AdvertisePopup value={entity}></AdvertisePopup>  <button id={entity.post_path} onClick={(evt) => deleteFn(evt)} className="btnDelete">Delete</button> </div> 
     </div> 
         );
       })}

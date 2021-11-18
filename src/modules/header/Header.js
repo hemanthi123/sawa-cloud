@@ -18,7 +18,7 @@ function Header() {
      <header className="menuu1">
     <div className="div-logo"><img src={logo} className="App-logo" alt="logo" /></div>
       
-    <div className="div-logout1"><a href="../homepage"><button className="btn-menu1" >Home</button></a><PostPopup value="post_header"></PostPopup><AdvertisePopup></AdvertisePopup><button className="btn-menu1" onClick={logout}>Logout</button></div>  
+    <div className="div-logout1"><a href="../homepage"><button className="btn-menu1" >Home</button></a><PostPopup value="post_header"></PostPopup><AdvertisePopup value="adv_header"></AdvertisePopup><button className="btn-menu1" onClick={logout}>Logout</button></div>  
     </header>
 
   );
