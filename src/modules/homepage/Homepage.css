@@ -136,7 +136,7 @@ html{
   .posts-home {  
     background-color: rgb(237, 241, 240);
     width: 100%; 
-    padding-top: 16%;
+    padding-top: 12.5%;
   }
 
   .posts-start1 {  
@@ -167,20 +167,20 @@ html{
     background-color: white;
   }
 
-  .post, .posts-bu{ 
-    background-color: white;
+  .post, .posts-bu1{ 
+    background-color:white;
     width: 99%;  
     padding-left: 1%;
-    padding-top: 1%; 
+    padding-top: 0.5%; 
     border-width: 2px;    
     border-radius: 12px;    
     box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
     overflow: visible;
   }
 
-  .posts-bu{ 
-    padding-top: 2%;
-    padding-bottom: 2%;
+  .posts-bu1{ 
+    padding-top: 1%;
+    padding-bottom: 1%;
   }
 
   .button-sp:hover {

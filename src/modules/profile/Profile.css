@@ -13,7 +13,7 @@
   position: fixed;
     height:100%;
     width: 18%;
-    background-color:white; 
+    background-color:rgb(242, 243, 247); 
     box-shadow: 0 4px 12px rgb(0 0 0 / 15%);  
     border-radius: 12px; 
 }
@@ -22,7 +22,7 @@
   position: absolute; 
     height:10%;
     width: 100%;
-    background-color:white; 
+    background-color:rgb(242, 243, 247); 
     padding-left: 25%;
     padding-top: 5%;
 }

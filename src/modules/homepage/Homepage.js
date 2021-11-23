@@ -296,7 +296,7 @@ function Homepage() {
 <div className="second_col_parent1 mainClos">
   <div className="center-col">
     <div class=" posts-start1">
-      <div className="posts-bu">
+      <div className="posts-bu1">
         <div className="sp-pro-pic" onClick={togglePopup1}><img className="post-pro-pic" src={profilePicURL} alt="Los Angeles" width="20%" height="20%"/> 
             &nbsp;&nbsp;&nbsp;<PostPopup value="postHome"></PostPopup></div> 
       </div>
