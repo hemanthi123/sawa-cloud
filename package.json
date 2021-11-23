@@ -2,7 +2,7 @@
   "name": "saa",
   "version": "0.1.0",
   "engines": {
-    "node": "16.x",    
+    "node": "16.x",
     "npm": "7.x"
   },
   "private": true,
@@ -18,7 +18,7 @@
     "react-dropzone-uploader": "^2.11.0",
     "react-firebase-hooks": "^3.0.4",
     "react-router-dom": "^5.3.0",
-    "react-scripts": "^1.1.5",
+    "react-scripts": "^4.0.3",
     "react-scroll": "^1.8.4",
     "react-show-more-text": "^1.5.0",
     "reactjs-popup": "^2.0.5",
