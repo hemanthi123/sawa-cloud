@@ -1,10 +1,10 @@
 
   
-.first_col_parent{
-  width: 25%;
+.first_col_parent1{
+  width: 20%;
   float: left;
   background-color: rgb(237, 241, 240);
-  padding-left: 4%; 
+  padding-left: 1%; 
   padding-top: 5.5%;
 } 
 
@@ -12,6 +12,7 @@
 .div-categories1{ 
   position: fixed;
     height:100%;
+    width: 18%;
     background-color:white; 
     box-shadow: 0 4px 12px rgb(0 0 0 / 15%);  
     border-radius: 12px; 

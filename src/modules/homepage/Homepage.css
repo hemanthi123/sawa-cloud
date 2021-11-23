@@ -142,7 +142,7 @@ html{
   .posts-start1 {  
     top:13%;
     background-color: rgb(237, 241, 240);
-    width: 50.5%;
+    width: 55.5%;
     height: 15%;
     position: fixed;
   }
@@ -324,9 +324,9 @@ html{
   width: 70%;
 }
 
-.second_col_parent{
+.second_col_parent1{
   padding-left: 0%;
-  width: 50%;
+  width: 55%;
   float: left;
   background-color: rgb(237, 241, 240); 
   height: 100%; 
@@ -334,7 +334,7 @@ html{
 }
 
 .third_col_parent{
-  width: 25%;
+  width: 28%;
   float: left;
   background-color: rgb(237, 241, 240);  
   padding-top: 5%;
@@ -364,6 +364,7 @@ h6{
 }
 
 .adv-container1 { 
+  width: 26%;
   position:fixed;
   -webkit-animation:slide 8s ease-in-out infinite;
   -moz-animation:slide 8s ease-in-out infinite;

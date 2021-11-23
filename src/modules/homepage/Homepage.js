@@ -293,7 +293,7 @@ function Homepage() {
 <div className="home-su-welcome1"><h4>Welcome to your social awareness network</h4> </div>
 <Profile></Profile>     
 
-<div className="second_col_parent mainClos">
+<div className="second_col_parent1 mainClos">
   <div className="center-col">
     <div class=" posts-start1">
       <div className="posts-bu">

@@ -70,7 +70,7 @@ function Profile() {
   }, [user, loading]);
     //
   return (
-    <div className="first_col_parent mainClos">
+    <div className="first_col_parent1 mainClos">
     <div className="div-categories1" >
       <div className="div-categories-img1"><img className="post-pro-pic-user" src={profilePicURL}/></div>
       <div className="prof-desc1" >
