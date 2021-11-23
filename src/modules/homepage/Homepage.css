@@ -142,7 +142,7 @@ html{
   .posts-start1 {  
     top:13%;
     background-color: rgb(237, 241, 240);
-    width: 48.7%;
+    width: 50.5%;
     height: 15%;
     position: fixed;
   }
@@ -325,7 +325,7 @@ html{
 }
 
 .second_col_parent{
-  padding-left: 2%;
+  padding-left: 0%;
   width: 50%;
   float: left;
   background-color: rgb(237, 241, 240); 
