@@ -277,7 +277,7 @@ html{
   float: left;
   padding-left: 1%;
   width: 24%;
-  position:fixed;
+ /* position:fixed;*/
   padding-right: 2%; 
   height: 100%;
   padding-top: 30px;
@@ -288,6 +288,13 @@ html{
     box-shadow: 0 4px 12px rgb(0 0 0 / 15%);  
     border-radius: 12px; */
   
+} 
+
+.div-advertiesments{  
+  float:left;
+  position:relative;
+  z-index:1;
+  overflow:hidden;
 }
 
 .div-advertiesments{ 
@@ -365,31 +372,28 @@ h6{
 
 .adv-container1 { 
   width: 24%;
-  position:fixed;
-  -webkit-animation:slide 8s ease-in-out infinite;
-  -moz-animation:slide 8s ease-in-out infinite;
-  -ms-animation:slide 8s ease-in-out infinite;
-  -o-animation:slide 8s ease-in-out infinite;
-  animation:slide 8s ease-in-out infinite;
+  position:fixed; 
 }
 
+/*
 .adv-container1 .div-advertiesments {
   float:left;
-} 
+} */
 
-.adv-container1:hover {
+
+.adv-container1:hover .section:hover {
  animation-play-state:paused;
  -webkit-animation-play-state:paused;
 }
 
-
+/*
 @-webkit-keyframes slide {
   0% {top:12%;}
   25% {top:-100px;}
   50% {top:-200px;}
   75% {top:-300px;}
   100% {top:12%;}
-}
+}*/
 
 /*
 @-moz-keyframes slide {
@@ -423,6 +427,81 @@ h6{
   100% {top:0;}
 }
 */
+
+ 
+
+@keyframes display {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(50px);
+    opacity: 1;
+  }
+  20% {
+    transform: translateY(150px);
+    opacity: 1;
+  }
+  30% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  40% {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(400px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(500px);
+    opacity: 0;
+  }
+  70% {
+    transform: translateY(600px);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(700px);
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(800px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(850px);
+    opacity: 0;
+  }
+}
+ 
+
+.adv-container1 > .section {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  animation: display 12s infinite;
+}
+
+
+.section:nth-child(1) {
+  animation-delay: 0s;
+}
+.section:nth-child(2) {
+  animation-delay: 3s;
+}
+.section:nth-child(3) {
+  animation-delay: 6s;
+}
+.section:nth-child(4) {
+  animation-delay: 9s;
+}
+.section:nth-child(5) {
+  animation-delay: 12s;
+}
+
 
 
 
