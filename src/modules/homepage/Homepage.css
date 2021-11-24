@@ -482,7 +482,7 @@ h6{
   position: absolute;
   top: 0;
   opacity: 0;
-  animation: display 12s infinite;
+  animation: display 15s infinite;
 }
 
 
@@ -500,6 +500,16 @@ h6{
 }
 .section:nth-child(5) {
   animation-delay: 12s;
+}
+
+.section:nth-child(6) {
+  animation-delay: 15s;
+}
+.section:nth-child(7) {
+  animation-delay: 18s;
+}
+.section:nth-child(8) {
+  animation-delay: 21s;
 }
 
 
