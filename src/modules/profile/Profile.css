@@ -60,10 +60,10 @@ p{
   box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
   border-radius: 12px;
   width: 100%;
-  padding-left: 2%;
+  padding-left: 4%;
   padding-right: 2%;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .user_panel a{ 
