@@ -78,7 +78,8 @@ function PostPopup(prop) {
   const submitPost = (e) => {
     e.preventDefault();
     let topic = document.getElementById('textTopic').value;
-    let description = document.getElementById('textContent').value
+    let description = document.getElementById('textContent').value;
+    document.getElementById('id-post').style.display='none';
    // alert("submitted"+document.getElementById('textContent').value);
    //alert(file.name);
    
@@ -167,6 +168,7 @@ function PostPopup(prop) {
     });
   })
   .then(function() { 
+    alert("Submitted")
    /* let ref =null;
    if(fileType=="video") {
           ref = storeDB.ref("/users/"+uref+"/posts/"+pref+"/"+`${file.name}`);
@@ -337,7 +339,7 @@ function PostPopup(prop) {
     <div className="popup_text"><textarea id="textContent" placeholder="What do you want to talk about?">{description}</textarea></div>
     <div className="popup_uploaded"> <img className="uploaded_image" className={imageShowingStyle} id="uploaded_image" src={fileObj}/><video className="uploaded_video" className={videoShowingStyle} id="uploaded_video" src={fileObj} controls></video></div>
     <div className="popup_icons"><input type="file" onChange={(evt) => loadFile(evt)} id="myFile" name="filename"></input></div>
-    <div className="popup_submit"><button className="btn-menu" onClick={submitPost}>Post</button></div>
+    <div className="popup_submit"><button id="id-post" className="btn-menu" onClick={submitPost}>Post</button></div>
   </div> 
 
 )}
