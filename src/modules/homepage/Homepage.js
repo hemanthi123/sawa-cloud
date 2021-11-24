@@ -330,11 +330,11 @@ function Homepage() {
   </div>
 </div>
  
-<div className="third_col_parent mainClos">
+<div className="third_col_parent1 mainClos">
     <div className="adv-container1 container">
     {ads1.map((entity1, index) => {  //console.log(entity1);
         return ( 
-          <div className="div-advertiesments section"> <p>{entity1.description} Advertised By: {entity1.name}</p>
+          <div className="div-advertiesments1 section"> <p><b>{entity1.description} </b><br></br> Advertised By: {entity1.name}</p>
             {(entity1.urls).map((entity2, index) => {  console.log(entity2.image_url);
             return (
             <img src={entity2.image_url} className="App-adv" alt="logo" />

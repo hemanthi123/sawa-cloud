@@ -290,19 +290,32 @@ html{
   
 } 
 
-.div-advertiesments{  
+.div-advertiesments1{  
   float:left;
   position:relative;
   z-index:1;
   overflow:hidden;
 }
 
-.div-advertiesments{ 
-  text-align: center;
+.div-advertiesments1{ 
+  text-align: left;
+  align-content: left;
     background-color:white;  
     border-radius: 12px;
     width: 100%;
-    padding: 6%;  
+    padding-left: 6%;  
+    padding-right: 4%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.div-advertiesments1 p{
+  font-size: 12px;
+  text-align: left;
+}
+
+.div-advertiesments1 img video{ 
+  align-content: left;
 }
 
 .read-more-link{
@@ -340,8 +353,8 @@ html{
   padding-top: 5%;
 }
 
-.third_col_parent{
-  width: 28%;
+.third_col_parent1{
+  width: 10%;
   float: left;
   background-color: rgb(237, 241, 240);  
   padding-top: 5%;
@@ -365,7 +378,7 @@ h6{
  
 
 
-.third_col_parent {
+.third_col_parent1 {
   margin:0 auto;
   overflow:hidden;
 }
