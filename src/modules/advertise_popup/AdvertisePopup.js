@@ -80,6 +80,8 @@ function AdvertisePopup(prop) {
    // let topic = document.getElementById('textTopic').value;
     let description = document.getElementById('textContent').value
    // alert("submitted"+document.getElementById('textContent').value);
+   
+   document.getElementById('id-btn-menu').style.display='none';
    //alert(file.name);
    
   // alert(uref);
@@ -326,7 +328,7 @@ function AdvertisePopup(prop) {
    <div className="popup_text"><textarea id="textContent" placeholder="What do you want to talk advertise?">{description}</textarea></div>
     <div className="popup_uploaded"> <img className="uploaded_image" className={imageShowingStyle} id="uploaded_image" src={fileObj} width="50%" height="50%"/><video className="uploaded_video" className={videoShowingStyle} id="uploaded_video" src={fileObj} controls></video></div>
     <div className="popup_icons"><input type="file" onChange={(evt) => loadFile(evt)} id="myFile" name="filename"></input></div>
-    <div className="popup_submit"><button className="btn-menu" onClick={submitPost}>Submit</button></div>
+    <div className="popup_submit"><button id="id-btn-menu" className="btn-menu" onClick={submitPost}>Submit</button></div>
   </div> 
 
 )}
