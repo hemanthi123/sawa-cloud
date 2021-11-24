@@ -17,8 +17,7 @@ function Reset() {
   return (
     <div className="login-cont">
 
-    <div className="div-content-login"> 
-    <div><button className="btn-logout" onClick="">Logout</button></div> 
+    <div className="div-content-login">  
 
 <div className="login-header">
     <div className="logo-welcome"><img src={logo} className="login-logo" alt="logo" /></div>
