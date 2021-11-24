@@ -92,8 +92,7 @@ function PostPopup(prop) {
     let ref =storeDB.ref("/users/"+uref+"/posts/"+docRef+"/"+`${file.name}`);  
     const uploadTask = ref.put(file);
     uploadTask.on("state_changed", console.log, console.error, () => {
-      ref.getDownloadURL().then((url) => {
-        alert(url);
+      ref.getDownloadURL().then((url) => { 
         
             
 

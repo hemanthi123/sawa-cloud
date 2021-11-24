@@ -20,10 +20,7 @@ function Profile() {
   const [profilePicURL, setImageUrl]= useState("");
   const [userType, setUserType]= useState(2);
   const [admin_display, setAdminDisplay]= useState("admin_panel");
-  const [admin_desc, setUserTypeDesc]= useState("");
-  
-
-  
+  const [admin_desc, setUserTypeDesc]= useState(""); 
   
 
   const fetchUserName = async () => {

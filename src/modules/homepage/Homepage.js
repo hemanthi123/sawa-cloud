@@ -46,9 +46,7 @@ db.collection('users').get().then((snippetsSnapshot) =>{
   /*******load all posts****** */
   db.collection('/users/'+doc.id+'/post').where("approved_status", "==", 1).get().then((querySnapshot) => {
   querySnapshot.docs.forEach((doc1) => {
-    
-   
-      
+         
     let item_p=[]; 
     let urls_p =[];
     let urls_v_p =[];
