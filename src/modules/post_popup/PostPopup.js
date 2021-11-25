@@ -243,7 +243,7 @@ function PostPopup(prop) {
       setVideoDisplayStyle('uploaded_video');
       setImageDisplayStyle('uploaded_image1');
     return(
-        <button    className="button-sp">Strat a post</button>
+        <button    className="button-sp">Start a campaign</button>
     )
     }
     else if(prop.value=="post_header"){
@@ -251,7 +251,7 @@ function PostPopup(prop) {
       setVideoDisplayStyle('uploaded_video');
       setImageDisplayStyle('uploaded_image1');
         return(
-            <button className="btn-menu1" onClick="">Post</button>
+            <button className="btn-menu1" onClick="">Campaign</button>
         )
     }
     else /*if(prop.value=="post_edit")*/{
