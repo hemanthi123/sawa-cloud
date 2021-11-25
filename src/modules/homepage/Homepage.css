@@ -516,6 +516,11 @@ h6{
   animation-delay: 21s;
 }
 
+span.ex1 {
+  min-width: 500px;
+  display: inline-block;
+}
+
 
 
 

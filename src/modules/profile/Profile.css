@@ -52,6 +52,10 @@ p{
   text-align:left;
 }
 
+.first_col_parent1{
+  min-width: 5000px;
+}
+
 
 .admin_panel{
   display: none;

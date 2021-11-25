@@ -210,3 +210,8 @@ background-position-x: 90%;
     width: 100%;
     height: 100%; 
   } 
+
+  .login__container-div {
+    min-width: 400px;
+    display: inline-block;
+  }
