@@ -199,7 +199,7 @@ function Homepage() {
     };
     return (
       <p className="text">
-        {isReadMore ? text.slice(0, 100) : text}
+        {isReadMore ? text.slice(0, 200) : text}
         <span onClick={toggleReadMore} className="read-or-hide"><br></br>
           <span className="read-more-link">{isReadMore ? "...see more" : " ...show less"}</span>
         </span>
