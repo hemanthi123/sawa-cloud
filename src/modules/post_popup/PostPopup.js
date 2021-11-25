@@ -30,7 +30,7 @@ function PostPopup(prop) {
   const [url, setURL] = useState("");
   const [uref, setUref] = useState("");
   const [pref, setPref] = useState("");
-  const [popupWHeader, setPopupHeader] = useState("Create a Post");
+  const [popupWHeader, setPopupHeader] = useState("Create a campaign");
   const [topic, setTopic] = useState("");
   const [description, setDescription] = useState("");
   const [imagePath, setImagePath] = useState("");
@@ -85,7 +85,7 @@ function PostPopup(prop) {
    //alert(file.name);
    
   // alert(uref);
-  if(popupWHeader=="Edit the post")
+  if(popupWHeader=="Edit the campaign")
   {
     alert("update");
     console.error( db.collection("/users/"+uref+"/post").doc(docRef).update({"topic": topic ,"description_post": description, "approved_status": 0, "time_updated":Timestamp.fromDate(new Date())  }));
@@ -239,7 +239,7 @@ function PostPopup(prop) {
 
   const loadButton = () => { 
     if(prop.value=="postHome"){
-      setPopupHeader("Create a post");      
+      setPopupHeader("Create a campaign");      
       setVideoDisplayStyle('uploaded_video');
       setImageDisplayStyle('uploaded_image1');
     return(
@@ -247,7 +247,7 @@ function PostPopup(prop) {
     )
     }
     else if(prop.value=="post_header"){
-      setPopupHeader("Create a post");     
+      setPopupHeader("Create a campaign");     
       setVideoDisplayStyle('uploaded_video');
       setImageDisplayStyle('uploaded_image1');
         return(
@@ -255,7 +255,7 @@ function PostPopup(prop) {
         )
     }
     else /*if(prop.value=="post_edit")*/{
-      setPopupHeader("Edit the post");
+      setPopupHeader("Edit the campaign");
       setTopic(prop.value.topic);
       setDescription(prop.value.description_post);
       setImageDisplayStyle('uploaded_image1');
@@ -347,7 +347,7 @@ function PostPopup(prop) {
     </a></h5>
     </div>
     <div className="popup_profile"><img className="post-pro-pic" src={profilePicURL} alt="Los Angeles" width="20%" height="20%"/> {name}</div>
-    <div className="popup_text1"><textarea id="textTopic" placeholder="Topic of the post?">{topic}</textarea></div>
+    <div className="popup_text1"><textarea id="textTopic" placeholder="Topic of the campaign?">{topic}</textarea></div>
     <div className="popup_text"><textarea id="textContent" placeholder="What do you want to talk about?">{description}</textarea></div>
     <div className="popup_uploaded"> <img className="uploaded_image" className={imageShowingStyle} id="uploaded_image" src={fileObj}/><video className="uploaded_video" className={videoShowingStyle} id="uploaded_video" src={fileObj} controls></video></div>
     <div className="popup_icons"><input type="file" onChange={(evt) => loadFile(evt)} id="myFile" name="filename"></input></div>
