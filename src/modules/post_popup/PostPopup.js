@@ -353,7 +353,7 @@ function PostPopup(prop) {
     <div className="popup_icons"><input type="file" onChange={(evt) => loadFile(evt)} id="myFile" name="filename"></input></div>
     <div className="popup_submit"><button id="id-btn-menu" className="btn-menu" onClick={submitPost}>Post</button></div>
   
-    <div id='overlay'><img src="./../../assets/waiting.png"></img></div>
+    
     </div> 
 
 )}

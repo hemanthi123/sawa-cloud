@@ -76,6 +76,7 @@ function AdvertisePopup(prop) {
 
 
   const submitPost = (e) => {
+    document.getElementById('overlay').style.display='block';
     e.preventDefault();
    // let topic = document.getElementById('textTopic').value;
     let description = document.getElementById('textContent').value
@@ -121,6 +122,9 @@ function AdvertisePopup(prop) {
           
           setFile(null);
           setURL(url);
+          
+          document.getElementById('overlay').style.display='none';
+          alert("Submitted"); 
         });
       });
     }
@@ -138,7 +142,7 @@ function AdvertisePopup(prop) {
     const uploadTask = ref.put(file);
     uploadTask.on("state_changed", console.log, console.error, () => {
       ref.getDownloadURL().then((url) => {
-        alert(url);
+        //alert(url);
           if(fileType=="video"){
             
             let coll ="/users/"+uref+"/advertiesments/"+docRef.id+"/videos";
@@ -153,6 +157,9 @@ function AdvertisePopup(prop) {
           
           setFile(null);
           setURL(url);
+          
+          document.getElementById('overlay').style.display='none';
+          alert("Submitted"); 
         }).then(() => {
          /* try { 
             // console.error( db.collection("/users/"+uref+"/post/"+docRef.id+"/images").doc(doc).update({"approved_status": -1  }));
@@ -329,6 +336,7 @@ function AdvertisePopup(prop) {
     <div className="popup_uploaded"> <img className="uploaded_image" className={imageShowingStyle} id="uploaded_image" src={fileObj} width="50%" height="50%"/><video className="uploaded_video" className={videoShowingStyle} id="uploaded_video" src={fileObj} controls></video></div>
     <div className="popup_icons"><input type="file" onChange={(evt) => loadFile(evt)} id="myFile" name="filename"></input></div>
     <div className="popup_submit"><button id="id-btn-menu" className="btn-menu" onClick={submitPost}>Submit</button></div>
+    
   </div> 
 
 )}

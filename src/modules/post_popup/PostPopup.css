@@ -126,6 +126,8 @@
   height: 300%;
   display: none;
   /*background-image: url(./../../assets/waiting.png);*/
+  align-content: center;
+  vertical-align:middle;
 }​
 
 

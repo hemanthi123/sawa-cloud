@@ -413,7 +413,7 @@ const approve = (e) => {
 
     </div>
 
-
+    <div id='overlay'><img src="./../../assets/waiting.png"></img></div>
       
     </div>
   );
