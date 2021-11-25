@@ -47,6 +47,12 @@ p{
   font-size:12px;
 }
 
+.prof-tasks{
+  height: 50px; 
+  text-align:left;
+}
+
+
 .admin_panel{
   display: none;
 }

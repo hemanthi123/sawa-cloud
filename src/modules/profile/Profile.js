@@ -73,12 +73,12 @@ function Profile() {
       <div className="prof-desc1" >
         
         <p className="user_name">{admin_desc} <br></br> {name}</p>
-        <div class="user_panel"><p><a href="../hem">Edit my profile</a></p>
-        <p><a href="../your_recent_posts">View, edit or delete my campaigns</a></p>
-        <p><a href="../your_recent_advertisements">View, edit or delete my adveriesments</a></p>
+        <div class="user_panel"><p className="prof-tasks"><a href="../hem">Edit my profile</a></p>
+        <p className="prof-tasks"><a href="../your_recent_posts">View, edit or delete my campaigns</a></p>
+        <p className="prof-tasks"><a href="../your_recent_advertisements">View, edit or delete my adveriesments</a></p>
         </div>
-        <div class="admin_panel" className={admin_display}><p><a href="../posts_approval">Approve Campaigns</a></p>
-        <p><a href="../advertisements_approval">Approve advertisements</a></p> 
+        <div class="admin_panel" className={admin_display}><p className="prof-tasks"><a href="../posts_approval">Approve Campaigns</a></p>
+        <p className="prof-tasks"><a href="../advertisements_approval">Approve advertisements</a></p> 
         </div>
       </div>
     </div>
