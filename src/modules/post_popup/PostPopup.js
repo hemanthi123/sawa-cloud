@@ -76,6 +76,7 @@ function PostPopup(prop) {
 
 
   const submitPost = (e) => {
+    document.getElementById('overlay').style.display='block';
     e.preventDefault();
     let topic = document.getElementById('textTopic').value;
     let description = document.getElementById('textContent').value;
@@ -89,7 +90,7 @@ function PostPopup(prop) {
     alert("update");
     console.error( db.collection("/users/"+uref+"/post").doc(docRef).update({"topic": topic ,"description_post": description, "approved_status": 0, "time_updated":Timestamp.fromDate(new Date())  }));
     if(fileChanged==1){
-      
+   console.log(file) 
     let ref =storeDB.ref("/users/"+uref+"/posts/"+docRef+"/"+`${file.name}`);  
     const uploadTask = ref.put(file);
     uploadTask.on("state_changed", console.log, console.error, () => {
@@ -121,6 +122,9 @@ function PostPopup(prop) {
           
           setFile(null);
           setURL(url);
+          document.getElementById('overlay').style.display='none';
+          alert("Submitted");
+          //document.getElementById('id-post_popup').style.display='none';
         });
       });
     }
@@ -139,22 +143,30 @@ function PostPopup(prop) {
     const uploadTask = ref.put(file);
     uploadTask.on("state_changed", console.log, console.error, () => {
       ref.getDownloadURL().then((url) => {
-        alert(url);
+        
           if(fileType=="video"){
             
             let coll ="/users/"+uref+"/post/"+docRef.id+"/videos";
             db.collection(coll).add({
-              video_url: url,})
+              video_url: url,});
           }
           else{
             let coll ="/users/"+uref+"/post/"+docRef.id+"/images";
             db.collection(coll).add({
-              image_url: url,})
+              image_url: url,});
           }
           
           setFile(null);
           setURL(url);
-        }).then(() => {
+          document.getElementById('overlay').style.display='none';
+          alert("Submitted");  
+          //document.getElementById('id-post_popup').style.display='none';
+               
+
+        })
+        .then(function(url) {//alert(url);
+        })
+        .then(() => {
          /* try { 
             // console.error( db.collection("/users/"+uref+"/post/"+docRef.id+"/images").doc(doc).update({"approved_status": -1  }));
             alert("/users/"+uref+"/post/"+docRef.id+"/images");
@@ -168,7 +180,7 @@ function PostPopup(prop) {
     });
   })
   .then(function() { 
-    alert("Submitted")
+    //alert("Submitted")
    /* let ref =null;
    if(fileType=="video") {
           ref = storeDB.ref("/users/"+uref+"/posts/"+pref+"/"+`${file.name}`);
@@ -327,7 +339,7 @@ function PostPopup(prop) {
     <Popup  trigger={loadButton} position="center">
     {  
     close => ( 
-  <div className="post_popup">
+  <div className="post_popup" id="id-post_popup">
     <div className="popup_header">
       <h5>{popupWHeader}
     <a className="close" onClick={close}>
@@ -340,7 +352,9 @@ function PostPopup(prop) {
     <div className="popup_uploaded"> <img className="uploaded_image" className={imageShowingStyle} id="uploaded_image" src={fileObj}/><video className="uploaded_video" className={videoShowingStyle} id="uploaded_video" src={fileObj} controls></video></div>
     <div className="popup_icons"><input type="file" onChange={(evt) => loadFile(evt)} id="myFile" name="filename"></input></div>
     <div className="popup_submit"><button id="id-btn-menu" className="btn-menu" onClick={submitPost}>Post</button></div>
-  </div> 
+  
+    <div id='overlay'><img src="./../../assets/waiting.png"></img></div>
+    </div> 
 
 )}
 </Popup>

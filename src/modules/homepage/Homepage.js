@@ -306,7 +306,7 @@ function Homepage() {
       <div className="post">
       <div><img className="post-pro-pic" src={entity.path1} alt="" width="20%" height="20%"/>  <span className="postuname">{entity.name}- {new Date(entity.time_added * 1000).toLocaleDateString("en-us")} {new Date(entity.time_added * 1000).toLocaleTimeString("en-us")}</span></div>       
       <div className="post-desc"  key={index}>
-        <h6>{entity.topic}</h6>
+        <p><b>{entity.topic}</b></p>
         {(entity.urls).map((entity2, index) => {  //console.log(entity2.image_url);
             return (
             <img src={entity2.image_url} className="App-adv" alt="logo" />
@@ -334,7 +334,7 @@ function Homepage() {
     <div className="adv-container1 container">
     {ads1.map((entity1, index) => {  //console.log(entity1);
         return ( 
-          <div className="div-advertiesments1 section"> <p><b>{entity1.description} </b><br></br> Advertised By: {entity1.name}</p>
+          <div className="div-advertiesments1 section"> <p><b>{entity1.description} </b><br></br> <i>Advertised By: {entity1.name}</i></p>
             {(entity1.urls).map((entity2, index) => {  console.log(entity2.image_url);
             return (
             <img src={entity2.image_url} className="App-adv" alt="logo" />
@@ -359,7 +359,7 @@ function Homepage() {
 
     </div>
 
- 
+    <div id='overlay'></div>
 
       
     </div>
