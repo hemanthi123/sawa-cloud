@@ -215,3 +215,28 @@ background-position-x: 90%;
     min-width: 400px;
     display: inline-block;
   }
+
+  /* min size style*/
+@media screen and (max-width:320px) {
+  /* put your css style in there */
+  .login-div{
+    padding-top: 2%;
+    width: 100%;
+    align-content: left;
+    
+    background-color: white;
+  }
+
+  .div-content-image{ 
+    background-position-y:bottom; 
+      margin-left: 50%; 
+      height:max-content; 
+      padding-top: 43%;
+      width: 0%;
+      height: 100%; 
+      background-color: violet;
+      background-image:url("../../../src/background_home.jpg");
+  
+  
+    }
+}
